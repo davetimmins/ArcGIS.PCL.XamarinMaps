@@ -44,14 +44,14 @@ namespace ArcGIS.ServiceModel
             if (points == null || !points.Any() || points.Any(p => p.Geometry == null)) return null;
 
             var checkSR = points.First().Geometry.SpatialReference;
-            if (checkSR != null && checkSR != SpatialReference.WGS84)
+            if (checkSR != null && checkSR.Wkid != SpatialReference.WGS84.Wkid)
                 throw new InvalidOperationException("Only features with a spatial reference of WGS84 are supported.");
 
             return points.Select(point =>
             {
                 return new Pin
                 {
-                    Type = PinType.Place,
+                    Type = pinType,
                     Position = new Position(point.Geometry.Y, point.Geometry.X),
                     Label = (String.IsNullOrWhiteSpace(labelField) || point.Attributes == null || !point.Attributes.ContainsKey(labelField))
                         ? "" : point.Attributes[labelField].ToString()
