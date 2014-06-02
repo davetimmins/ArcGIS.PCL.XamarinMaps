@@ -35,6 +35,7 @@
   <ItemGroup>
     <Compile Include="Extensions\FeatureExtensions.cs" />
     <Compile Include="Extensions\OperationExtensions.cs" />
+    <Compile Include="Extensions\PinExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
