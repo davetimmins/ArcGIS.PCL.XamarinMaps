@@ -58,5 +58,18 @@ namespace ArcGIS.ServiceModel
                 };
             }).ToList();
         }
+
+        /// <summary>
+        /// Convert an ArcGIS point into a Position
+        /// </summary>
+        /// <param name="point">The point which must have a spatial reference of WGS84</param>
+        /// <returns></returns>
+        public static Position ToPosition(this Point point)
+        {
+            if (point.SpatialReference == null || point.SpatialReference.Wkid != SpatialReference.WGS84.Wkid)
+                throw new InvalidOperationException("Only extents with a spatial reference of WGS84 are supported.");
+
+            return new Position(point.Y, point.X);
+        }        
     }
 }
