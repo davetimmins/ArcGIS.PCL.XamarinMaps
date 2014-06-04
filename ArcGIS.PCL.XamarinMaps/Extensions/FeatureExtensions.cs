@@ -70,6 +70,15 @@ namespace ArcGIS.ServiceModel
                 throw new InvalidOperationException("Only extents with a spatial reference of WGS84 are supported.");
 
             return new Position(point.Y, point.X);
-        }        
+        }
+
+        public static MapSpan ToMapSpan(this Extent extent)
+        {
+            if (extent.SpatialReference == null || extent.SpatialReference.Wkid != SpatialReference.WGS84.Wkid)
+                throw new InvalidOperationException("Only extents with a spatial reference of WGS84 are supported.");
+
+            return MapSpan.FromCenterAndRadius(extent.GetCenter().ToPosition(),
+              Distance.FromMeters(MathUtils.Distance(new Position(extent.YMin, extent.XMin), new Position(extent.YMin, extent.XMax))));
+        }
     }
 }

@@ -2,7 +2,7 @@
 using System;
 using Xamarin.Forms.Maps;
 
-namespace ArcGIS.ServiceModel.Extensions
+namespace ArcGIS.ServiceModel
 {
     public static class PositionExtensions
     {

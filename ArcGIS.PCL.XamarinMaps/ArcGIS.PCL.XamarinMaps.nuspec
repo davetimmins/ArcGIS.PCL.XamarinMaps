@@ -13,9 +13,6 @@
 			Extensions for converting ArcGIS features into their Xamarin.Forms.Maps equivalent.
 
 			Works with Windows Phone 8 and higher, Xamarin Android and Xamarin iOS.
-			
-			Convert a list of ArcGIS point features to Pins.
-			Convert a list of Pins to ArcGIS point features.
 		</description>
 		<summary>
 			Extensions for converting ArcGIS features into their Xamarin.Forms.Maps equivalent.
@@ -23,9 +20,12 @@
 			Works with Windows Phone 8 and higher, Xamarin Android and Xamarin iOS.
 		</summary>
 		<releaseNotes>
-			Updated NuGet references.
-			Added converting Pins to Points
-		</releaseNotes>
+      Updated NuGet references.
+      Added converting Pins to Points.
+      Added converting Point to Position.
+      Added converting Extent to MapSpan.
+      Added math utility methods for distance, bearing.
+    </releaseNotes>
 		<language />
 		<tags>ArcGIS PCL Xamarin</tags>
 		<dependencies>

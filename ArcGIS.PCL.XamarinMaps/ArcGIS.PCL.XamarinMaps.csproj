@@ -34,9 +34,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Extensions\FeatureExtensions.cs" />
+    <Compile Include="Extensions\MapSpanExtensions.cs" />
     <Compile Include="Extensions\OperationExtensions.cs" />
     <Compile Include="Extensions\PinExtensions.cs" />
     <Compile Include="Extensions\PositionExtensions.cs" />
+    <Compile Include="MathUtils.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Xamarin.Forms.Maps;
 
-namespace ArcGIS.ServiceModel.Extensions
+namespace ArcGIS.ServiceModel
 {
     public static class PinExtensions
     {
