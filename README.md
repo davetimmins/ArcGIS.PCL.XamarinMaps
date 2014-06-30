@@ -1,6 +1,8 @@
-#![Icon](https://raw.githubusercontent.com/davetimmins/ArcGIS.PCL/master/gateway.png) ArcGIS.PCL.XamarinMaps
+<img align="right" height="120" src="https://raw.githubusercontent.com/davetimmins/ArcGIS.PCL/master/gateway.png">
 
-[![Build status](https://ci.appveyor.com/api/projects/status/27swdq5ie969aekk?retina=true)](https://ci.appveyor.com/project/davetimmins/arcgis-pcl-xamarinmaps) [![NuGet Status](http://img.shields.io/nuget/v/ArcGIS.PCL.XamarinMaps.svg?style=flat)](https://www.nuget.org/packages/ArcGIS.PCL.XamarinMaps/) 
+# ArcGIS.PCL.XamarinMaps
+
+[![Build status](https://ci.appveyor.com/api/projects/status/27swdq5ie969aekk)](https://ci.appveyor.com/project/davetimmins/arcgis-pcl-xamarinmaps) [![NuGet Status](http://img.shields.io/nuget/v/ArcGIS.PCL.XamarinMaps.svg?style=flat)](https://www.nuget.org/packages/ArcGIS.PCL.XamarinMaps/) 
 
 This library has extensions for the [ArcGIS.PCL](https://github.com/davetimmins/ArcGIS.PCL) package for converting ArcGIS features into types compatible with the Xamarin.Forms.Maps library.
 
