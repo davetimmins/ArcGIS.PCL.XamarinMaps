@@ -45,7 +45,7 @@ namespace ArcGIS.ServiceModel
         }
 
         /// <summary>
-        /// Caclulate the distance between the two positions
+        /// Calculate the distance between the two positions
         /// </summary>
         /// <param name="position1"></param>
         /// <param name="position2"></param>
