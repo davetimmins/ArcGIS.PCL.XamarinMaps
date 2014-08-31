@@ -15,7 +15,7 @@ install:
   - mono ./nuget/NuGet.exe restore ./ArcGIS.PCL.XamarinMaps/ArcGIS.PCL.XamarinMaps.sln
 
 script:
-  - xbuild ./ArcGIS.PCL.XamarinMaps/ArcGIS.PCL.XamarinMaps.ci.csproj
+  - xbuild ./ArcGIS.PCL.XamarinMaps/ArcGIS.PCL.XamarinMaps.sln /property:Configuration=Release /nologo /verbosity:normal
 
 notifications:
   email:
