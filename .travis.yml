@@ -1,8 +1,8 @@
-language: c
+language: objective-c
 
 env:
   matrix:
-    - MONO_VERSION="3.4.0"
+    - MONO_VERSION="3.6.0"
 
 before_install:
   - sudo bash -c "echo deb http://badgerports.org precise main >> /etc/apt/sources.list"
