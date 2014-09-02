@@ -7,10 +7,10 @@ env:
 install:
   - wget "http://download.mono-project.com/archive/${MONO_VERSION}/macos-10-x86/MonoFramework-MDK-${MONO_VERSION}.macos10.xamarin.x86.pkg"
   - sudo installer -pkg "MonoFramework-MDK-${MONO_VERSION}.macos10.xamarin.x86.pkg" -target /
-  - mono ./nuget/NuGet.exe restore ./src/ScriptCs.ArcGISScriptPack.sln
+  - mono ./nuget/NuGet.exe restore ./ArcGIS.PCL.XamarinMaps/ArcGIS.PCL.XamarinMaps.sln
 
 script:
-  - xbuild ./src/ScriptCs.ArcGISScriptPack.sln /property:Configuration=Release /nologo /verbosity:normal
+  - xbuild ./ArcGIS.PCL.XamarinMaps/ArcGIS.PCL.XamarinMaps.sln /property:Configuration=Release /nologo /verbosity:normal
 
 notifications:
   email:
