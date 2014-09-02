@@ -5,6 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArcGIS.PCL.XamarinMaps", "A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D0302F6D-DD66-4A01-B6AC-A010D865B60F}"
 	ProjectSection(SolutionItems) = preProject
+		..\.travis.yml = ..\.travis.yml
 		ArcGIS.PCL.XamarinMaps.nuspec = ArcGIS.PCL.XamarinMaps.nuspec
 		gruntfile.js = gruntfile.js
 		package.json = package.json

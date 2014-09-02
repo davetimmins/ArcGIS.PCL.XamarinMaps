@@ -9,7 +9,7 @@ namespace ArcGIS.ServiceModel
     public static class PinExtensions
     {
         /// <summary>
-        /// Convert pins into ArcGIS Point features. 
+        /// Convert pins into ArcGIS Point features.
         /// The converted list will have a spatial reference of WGS84 and include attributes for Address, Label and Type
         /// </summary>
         /// <param name="pins">Pins to convert</param>
@@ -27,7 +27,7 @@ namespace ArcGIS.ServiceModel
                         SpatialReference = SpatialReference.WGS84
                     },
                     Attributes = new Dictionary<String, object>
-                    {                
+                    {
                         { "Address", pin.Address },
                         { "Label", pin.Label },
                         { "Type", pin.Type.ToString() },

@@ -6,7 +6,7 @@ Example usage for getting points from an ArcGIS Server service as Pins
 
 var gateway = new PortalGateway (
 	"http://sampleserver3.arcgisonline.com/ArcGIS", 
-	new ArcGIS.ServiceModel.Serializers.JsonDotNetSerializer ());
+	new ArcGIS.ServiceModel.Serializers.JsonDotNetSerializer());
 
 var query = new Query ("Earthquakes/EarthquakesFromLastSevenDays/MapServer/0".AsEndpoint()) {
 	Where = "magnitude > 5.5",
@@ -19,3 +19,18 @@ var points = await gateway.Query<Point> (query.ToOutputAsGeographic());
 
 // call the extension method for the response
 return points.ToPins (PinType.Place, "magnitude");
+
+Instead of passing in a new instance of the serializer each time in the PortalGateway constructor 
+you can also initialise a default. So instead of
+
+var gateway = new PortalGateway (
+	"http://sampleserver3.arcgisonline.com/ArcGIS", 
+	new ArcGIS.ServiceModel.Serializers.JsonDotNetSerializer());
+
+you can call
+
+ArcGIS.ServiceModel.Serializers.JsonDotNetSerializer.Init();
+
+and then 
+
+var gateway = new PortalGateway ("http://sampleserver3.arcgisonline.com/ArcGIS");

@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
-	<metadata minClientVersion="2.8.1">
-		<id>ArcGIS.PCL.XamarinMaps</id>
-		<version>0.3.0</version>
-		<title>ArcGIS.PCL extensions for Xamarin Maps</title>
-		<authors>Dave Timmins</authors>
-		<projectUrl>https://github.com/davetimmins/ArcGIS.PCL.XamarinMaps</projectUrl>
-		<licenseUrl>https://github.com/davetimmins/ArcGIS.PCL.XamarinMaps/blob/master/LICENSE</licenseUrl>
-		<iconUrl>https://raw.githubusercontent.com/davetimmins/ArcGIS.PCL/master/gateway.png</iconUrl>
-		<requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<description>
-			Extensions for converting ArcGIS features into their Xamarin.Forms.Maps equivalent.
+  <metadata minClientVersion="2.8.1">
+    <id>ArcGIS.PCL.XamarinMaps</id>
+    <version>0.3.1</version>
+    <title>ArcGIS.PCL extensions for Xamarin Maps</title>
+    <authors>Dave Timmins</authors>
+    <projectUrl>https://github.com/davetimmins/ArcGIS.PCL.XamarinMaps</projectUrl>
+    <licenseUrl>https://github.com/davetimmins/ArcGIS.PCL.XamarinMaps/blob/master/LICENSE</licenseUrl>
+    <iconUrl>https://raw.githubusercontent.com/davetimmins/ArcGIS.PCL.XamarinMaps/master/arcgispcl-xamarin.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      Extensions for converting ArcGIS features into their Xamarin.Forms.Maps equivalent.
 
-			Works with Windows Phone 8 and higher, Xamarin Android and Xamarin iOS.
-		</description>
-		<summary>
-			Extensions for converting ArcGIS features into their Xamarin.Forms.Maps equivalent.
+      Works with Windows Phone 8 and higher, Xamarin Android and Xamarin iOS.
+    </description>
+    <summary>
+      Extensions for converting ArcGIS features into their Xamarin.Forms.Maps equivalent.
 
-			Works with Windows Phone 8 and higher, Xamarin Android and Xamarin iOS.
-		</summary>
-		<releaseNotes>
-			Updated NuGet references.
-			Added converting Pins to Points.
-			Added converting Point to Position.
-			Added converting Extent to MapSpan.
-			Added math utility methods for distance, bearing.
-		</releaseNotes>
-		<language />
-		<tags>ArcGIS PCL Xamarin</tags>
-		<dependencies>
-			<dependency id="ArcGIS.PCL" version="4.0.0" />	
-			<dependency id="ArcGIS.PCL.JsonDotNetSerializer" version="1.0.0" />			
-			<dependency id="Xamarin.Forms.Maps" version="1.2.2.6243" />	
-		</dependencies>
-	</metadata>
-	<files>
-		<file src="readme.txt" target="readme.txt" />
-		<file src="bin\Release\ArcGIS.ServiceModel.XamarinMaps.dll" target="lib\ArcGIS.ServiceModel.XamarinMaps.dll" />
-	</files>
+      Works with Windows Phone 8 and higher, Xamarin Android and Xamarin iOS.
+    </summary>
+    <releaseNotes>
+      Updated NuGet references.
+      Added converting Pins to Points.
+      Added converting Point to Position.
+      Added converting Extent to MapSpan.
+      Added math utility methods for distance, bearing.
+    </releaseNotes>
+    <language />
+    <tags>ArcGIS PCL Xamarin</tags>
+    <dependencies>
+      <dependency id="ArcGIS.PCL" version="4.0.0" />
+      <dependency id="ArcGIS.PCL.JsonDotNetSerializer" version="1.0.0" />
+      <dependency id="Xamarin.Forms.Maps" version="1.2.2.6243" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="readme.txt" target="readme.txt" />
+    <file src="bin\Release\ArcGIS.ServiceModel.XamarinMaps.dll" target="lib\ArcGIS.ServiceModel.XamarinMaps.dll" />
+  </files>
 </package>

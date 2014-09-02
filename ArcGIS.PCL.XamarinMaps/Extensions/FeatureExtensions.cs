@@ -60,7 +60,7 @@ namespace ArcGIS.ServiceModel
         }
 
         /// <summary>
-        /// Convert an ArcGIS point into a Position
+        /// Convert an ArcGIS <see cref="Point"/>  into a <see cref="Position"/> 
         /// </summary>
         /// <param name="point">The point which must have a spatial reference of WGS84</param>
         /// <returns></returns>
@@ -72,6 +72,11 @@ namespace ArcGIS.ServiceModel
             return new Position(point.Y, point.X);
         }
 
+        /// <summary>
+        /// Convert an ArcGIS <see cref="Extent"/> into a <see cref="MapSpan"/>
+        /// </summary>
+        /// <param name="extent"></param>
+        /// <returns></returns>
         public static MapSpan ToMapSpan(this Extent extent)
         {
             if (extent.SpatialReference == null || extent.SpatialReference.Wkid != SpatialReference.WGS84.Wkid)
